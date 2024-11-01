@@ -1,0 +1,207 @@
+.vp-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-bottom: 0;
+}
+.vp-tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color:#333;
+}
+.vp-tab button:hover {
+  background-color: #ddd;
+}
+.vp-tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.vp-tabcontent {
+  display: none;
+  padding: 6px 12px;
+
+  border-top: none;
+}
+.vp-container {
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+.vp-tab button:hover,.vp-tab button:focus{
+    background-color: #fba100 !important;
+     color:#fff !important;
+}
+.vp-tab button.active {
+  background-color: #fba100 !important;
+  color:#fff !important;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.container {
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-15 {
+  float: left;
+  width: 15%;
+}
+.col-3 {
+  float: left;
+  width: 3%;
+  font-size: 20px;
+  padding-top: 5px;
+}
+.col-50 {
+  float: left;
+  width: 20%;
+}
+.col-50-rt {
+  float: right;
+  width: 20%;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.col-100 {
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vp-button {
+  padding: 20px;
+}
+.vp-button button {
+  float: right;
+  padding: 7px 20px 7px 20px;
+  background: #fba100;
+  border: 1px solid #fba100;
+  color: #fff;
+}
+.vp-button button:hover {
+  background: transparent;
+  color: #fba100;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/** SPINNER CREATION **/
+.vp_loader {
+  position: relative;
+  text-align: center;
+  margin: 15px auto 35px auto;
+  z-index: 9999;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 10px solid rgba(242, 158, 36, 0.3);
+  border-radius: 50%;
+  border-top-color: rgba(242, 158, 36);
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.vp_loader-txt p {
+  font-size: 13px;
+  color: #666;
+}
+.vp_loader-txt p small {
+  font-size: 11.5px;
+  color: #999;
+}
+
+/* The Modal (background) */
+.vp_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.vp_modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+/* The Close Button */
+.vp_close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.vp_close:hover,
+.vp_close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
